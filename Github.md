@@ -24,3 +24,6 @@
 
 
 3) Virtual environment is not pushed to github unless explicitly added
+
+4) To check the remote repo:  
+   git remote -v

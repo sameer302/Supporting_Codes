@@ -1,11 +1,11 @@
-0) Three ways to add new line in markdown files:  
+# 0) Three ways to add new line in markdown files:  
    a) Add two spaces at the end of first line, this will move to next line in same paragraph
    
    b) Add `<br>` tag as markdown files support html syntax<br>
    
    c) Press enter twice i.e. leave a line in between, this will move to next paragraph
 
-2) When i am trying to do git pull but there are divergent branches, then  
+# 2) When i am trying to do git pull but there are divergent branches, then  
    a) to merge/keep both the histories:  
    git pull --no-rebase
    
@@ -23,7 +23,15 @@
    git stash
 
 
-3) Virtual environment is not pushed to github unless explicitly added
+# 3) Virtual environment is not pushed to github unless explicitly added
 
-4) To check the remote repo:  
+# 4) To check the remote repo:  
    git remote -v
+
+# 5) To check the git config username and email  
+   git config user.name  
+   git config user.email
+
+# 6) To reset a particular commit but preserve the changes and then push this to github
+   git reset --soft <commit_id of last commit before the commit we want to reset>
+   git push --force

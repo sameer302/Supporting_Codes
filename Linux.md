@@ -6,3 +6,6 @@
 
 # 3) How to delete an non-empty folder
   rm -r folder_name
+
+# 4) to know about CPU 
+  lscpu

@@ -6,10 +6,19 @@
    deep\Scripts\activate  
    (deep is the name given to venv)
 
-# 4) Activating virtual environment in windows Powershell  
+# 3) Activating virtual environment in windows Powershell  
    .\deep\Scripts\Activate.ps1  
    (deep is the name given to venv)
 
-# 6) Activating For Git Bash / WSL / macOS / Linux  
+# 4) Activating For Git Bash / WSL / macOS / Linux  
    source deep/bin/activate  
    deep is the name given to venv
+
+# 5) Deactivating virtual environment
+   deactivate
+
+# 6) Looking at various packages, modules and libraries installed in our environment
+   pip list
+
+# 7) To create a requirements.txt to save all the dependencies of our project
+   pip freeze > requirements.txt

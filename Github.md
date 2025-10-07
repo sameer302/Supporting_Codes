@@ -5,7 +5,7 @@
    
    c) Press enter twice i.e. leave a line in between, this will move to next paragraph
 
-# 2) When i am trying to do git pull but there are divergent branches, then  
+# 2) When I am trying to do git pull but there are divergent branches, then  
    a) to merge/keep both the histories:  
    git pull --no-rebase
    
@@ -35,3 +35,6 @@
 # 6) To reset a particular commit but preserve the changes and then push this to github
    git reset --soft <commit_id of last commit before the commit we want to reset>
    git push --force
+
+# 7) To set tracking information for current branch of local repo
+   git branch --set-upstream-to=origin/<branch> main

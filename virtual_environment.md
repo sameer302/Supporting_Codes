@@ -17,8 +17,11 @@
 # 5) Deactivating virtual environment
    deactivate
 
-# 6) Looking at various packages, modules and libraries installed in our environment
+# 6) Installing any module in our environment
+   pip install module_name
+
+# 7) Looking at various packages, modules and libraries installed in our environment
    pip list
 
-# 7) To create a requirements.txt to save all the dependencies of our project
+# 8) To create a requirements.txt to save all the dependencies of our project
    pip freeze > requirements.txt

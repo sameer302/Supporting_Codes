@@ -59,5 +59,11 @@ git pull upstream main -> (git pull = git fetch + get merge)
    git reset --soft <commit_id of last commit before the commit we want to reset>
    git push --force
 
-# 8) To set tracking information for current branch of local repo
+# To set tracking information for current branch of local repo
    git branch --set-upstream-to=origin/<branch> main
+
+# How to add a local repo to github
+   1) create a new repo on github
+   2) initialise empty git repo in local repo
+   3) run, "git remote add origin (HTTPS URL of remote repo on github)"
+   4) now we can commit the changes and push them to github repo

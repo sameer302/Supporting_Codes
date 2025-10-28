@@ -1,22 +1,27 @@
 # How to create a folder in linux terminal
     
     mkdir folder_name
+    output -> a folder with given foldername will be created in the present directory
 
 # How to delete an empty folder
     
     rmdir folder_name
+    output -> a folder with given name will be deleted from the current directory
 
 # How to delete an non-empty folder
     
     rm -r folder_name
+    output -> a folder with given name will be deleted from the current directory
 
 # To know about CPU 
     
     lscpu
+    output -> CPU details
 
 # To terminate the current terminal program
     
     ctrl + c
+    output -> the program is terminated and we can start with any new instruction
 
 # To update the package list in our system without installing or upgrading anything
     
@@ -30,7 +35,7 @@
     
     sudo apt full-upgrade
 
-# We can also combine 5) and 7) commands together as
+# We can also combine above commands together as
     
     sudo apt update \&\& sudo apt full-upgrade
 
@@ -71,5 +76,25 @@
     echo "what you read as input | awk '{what you want to do on each field of each line of input}'"
     echo "CPU temperature: $(cat /sys/class/thermal/thermal_zone0/temp | awk '{print $1/1000}')"
     output -> CPU temperature in milidegrees
+
+# To check IP address of host connected to our device via SSH
+
+    hostname -I
+    output -> IP address of the host device
+
+# To know all the secondary storage devices connected or present on our system
+
+    lsblk
+    output -> 
+    mmcblk0 : main memory card
+    mmcblk0p1 : partition 1 (main partition which contains Raspberry Pi OS, /)
+    mmcblk0p2 : partition 2 (boot partition, /boot/firmware)
+
+# To know the storage space available in each secondary device and virtual memory allocated to different file systems
+
+    df -h
+    output -> 
+    Filesystem      Size  Used Avail Use% Mounted on
+ 
 
   

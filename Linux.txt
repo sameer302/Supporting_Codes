@@ -95,6 +95,9 @@
     df -h
     output -> 
     Filesystem      Size  Used Avail Use% Mounted on
- 
+
+# To know about OS 
+
+    cat /etc/os-release
 
   

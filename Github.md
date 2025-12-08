@@ -71,4 +71,8 @@ git pull upstream main -> (git pull = git fetch + get merge)
 # Check total repo size (including .git)
    du -sh .
 
+# To initialize git in a local repo
+   1) create a new repository in GitHub
+   2) copy its URL
+   3) initialize git in the local repo by running the command, `git init`
 

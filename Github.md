@@ -67,3 +67,8 @@ git pull upstream main -> (git pull = git fetch + get merge)
    2) initialise empty git repo in local repo
    3) run, "git remote add origin (HTTPS URL of remote repo on github)"
    4) now we can commit the changes and push them to github repo
+
+# Check total repo size (including .git)
+   du -sh .
+
+

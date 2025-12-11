@@ -1,3 +1,7 @@
+# How to add user name and user email in github
+   git config --global user.name "Your Name"
+   git config --global user.email "Your Email"
+
 # Three ways to add new line in markdown files:  
    a) Add two spaces at the end of first line, this will move to next line in same paragraph
    

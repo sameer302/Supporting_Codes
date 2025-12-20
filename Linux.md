@@ -92,6 +92,18 @@
 
     cat /etc/os-release
 
+## To see what network are we connected to
+
+    iw dev wlan0 link
+
+## To see the list of all available networks that we can connect to
+
+    nmcli device wifi list
+
+## To connect to a particular network 
+
+    nmcli dev wifi connect "sameer" password "YOUR_WIFI_PASSWORD"
+
 # Commands to use for externally conected devices
 
 ## To know the peripherals connected via PCIe

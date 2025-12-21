@@ -104,6 +104,22 @@
 
     nmcli dev wifi connect "sameer" password "YOUR_WIFI_PASSWORD"
 
+## To know the python version
+
+    python3 --version
+
+## To know the CPU architecture
+
+    uname -m
+
+## To install system level dependencies
+
+    sudo apt install
+
+## To install inside virtual environment
+
+    pip install
+
 # Commands to use for externally conected devices
 
 ## To know the peripherals connected via PCIe

@@ -1,27 +1,30 @@
-# 1) How to create a python virtual environment ?  
-   python -m venv (name of virtual environment) -- windows  
-   python3 -m venv (name of virtual environment) -- linux  
+## 1) How to create a python virtual environment ?  
+   python -m venv (name of virtual environment) --> windows  
+   python3 -m venv (name of virtual environment) --> linux  
 
-# 2) Activating virtual environment in windows cmd.exe  
+## 2) Activating virtual environment in windows cmd.exe  
    deep\Scripts\activate  
    (deep is the name given to venv)
 
-# 3) Activating virtual environment in windows Powershell  
+## 3) Activating virtual environment in windows Powershell  
    .\deep\Scripts\Activate.ps1  
    (deep is the name given to venv)
 
-# 4) Activating For Git Bash / WSL / macOS / Linux  
+## 4) Activating For Git Bash / WSL / macOS / Linux  
    source deep/bin/activate  
    deep is the name given to venv
 
-# 5) Deactivating virtual environment
+## 5) Deactivating virtual environment
    deactivate
 
-# 6) Installing any module in our environment
+# Upgrading pip before installing any package
+   pip install --upgrade pip
+
+## 6) Installing any module in our environment
    pip install module_name
 
-# 7) Looking at various packages, modules and libraries installed in our environment
+## 7) Looking at various packages, modules and libraries installed in our environment
    pip list
 
-# 8) To create a requirements.txt to save all the dependencies of our project
+## 8) To create a requirements.txt to save all the dependencies of our project
    pip freeze > requirements.txt

@@ -1,16 +1,66 @@
 # Made a local repo and now you want to push it on github
 
 ## How to initialize a git repo
-   git init
+   
+   `git init`
 
 ## How to add user name and user email in github
-   git config --global user.name "Your Name"
-   git config --global user.email "Your Email"
+   
+   `git config --global user.name "Your Name"`
+   `git config --global user.email "Your Email"`
 
 ## How to add user name and user email in github
-   git config user.name
-   git config user.email
+   
+   `git config user.name`
+   `git config user.email`
 
+## check repository status (which files are untracked, modified or staged)
+
+   `git status`
+
+## add files to the staging area (so that we can make logically grouped commits at the end rather than commitiing after every one logical set of changes)
+
+   `git add . --> (to add all the unstaged files)`
+   `git add filename.py --> (to add a specific file)`
+
+## commit the staged changes 
+
+   `git commit -m "commit message"`
+
+## Make a remote github repo on github website and copy its url
+
+## adding a remote repo for the first time
+   
+   `git remote add origin <github_repo_url>`
+
+   1. this command will add the given repo for both fetch and push
+   2. for the first time we can't separately add repo for fetch and push
+   3. origin is the name given to the remote reference and we can give any other name also
+   4. this command just adds the given repo but does not yet push anything from our local repo to github repo
+
+## add separate repo to push
+
+   `git remote set-url --push origin <push_url>` --> (here it may seem that we are giving same name origin to this repo also and so this might create confusion when we are pushing any commits but that wont happen as git will save two urls for the name origin, one for fetching and one for pushing)
+
+## change the repo to pull from 
+
+   `git remote set-url origin <fetch_url>`
+
+## check the remote repo
+
+   `git remote -v` --> (this will tell us about separate github repo's to push to and pull from)
+
+## set the local current branch name so that we can push this branch to the remote repo branch
+
+   git branch -M main --> (by default this branch is named as Master and we need to -M just to avoid some unnecessary errors)
+
+## push local commits to github
+
+   git push -u origin main --> (-u sets this branch push and pull names, origin and main, so next time we just need to do git push)
+
+   
+   
+   
 
 # What all I can do when someone shares a git repo link with me ? : 
 a) If he is the owner of the repo then he can add me as a collaborator. Then I will be able to see the repo in my github account and also able to clone it in my local repo and can push directly to main or to the branch on which I am working. But I will have to periodically do git pull in order to get the latest state of the repo. If we both try to push directly to main then it may create conflict as one would overwrite other's contribution. Here I will have to make pull request for the commits that I have done on my branch.  

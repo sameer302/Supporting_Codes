@@ -1,13 +1,16 @@
-# How to add user name and user email in github
+# Made a local repo and now you want to push it on github
+
+## How to initialize a git repo
+   git init
+
+## How to add user name and user email in github
    git config --global user.name "Your Name"
    git config --global user.email "Your Email"
 
-# Three ways to add new line in markdown files:  
-   a) Add two spaces at the end of first line, this will move to next line in same paragraph
-   
-   b) Add `<br>` tag as markdown files support html syntax<br>
-   
-   c) Press enter twice i.e. leave a line in between, this will move to next paragraph
+## How to add user name and user email in github
+   git config user.name
+   git config user.email
+
 
 # What all I can do when someone shares a git repo link with me ? : 
 a) If he is the owner of the repo then he can add me as a collaborator. Then I will be able to see the repo in my github account and also able to clone it in my local repo and can push directly to main or to the branch on which I am working. But I will have to periodically do git pull in order to get the latest state of the repo. If we both try to push directly to main then it may create conflict as one would overwrite other's contribution. Here I will have to make pull request for the commits that I have done on my branch.  

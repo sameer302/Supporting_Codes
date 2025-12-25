@@ -4,7 +4,7 @@
 
 ## always do git pull if you are using a repo on different devices.
 
-# made a local repo and now you want to push it on github
+# Made a local repo and now you want to push it on github
 
 ## how to initialize a git repo
    
@@ -64,7 +64,9 @@
 
    `git push -u origin main` --> (-u sets this branch push and pull names, origin and main, so next time we just need to do git push)
 
-   
+## when you want to revert all changes made till last commmit 
+
+   `git reset --hard`
    
 # When you have a remote repo and you want to use it locally
 

@@ -1,4 +1,10 @@
-# Made a local repo and now you want to push it on github
+# Important notes
+
+## virtual enviroenment is not pushed to github unless explicitly stated
+
+## always do git pull if you are using a repo on different devices.
+
+# made a local repo and now you want to push it on github
 
 ## how to initialize a git repo
    
@@ -76,16 +82,8 @@ In such a case I will get the local copy of remote repo in which I can make chan
 
 `git clone https://github.com/friendusername/reponame.git` -> (after this a remote repo named origin pointing to this URL is automatically added so anytime we want to push or pull we can just do, git pull origin main and also git push origin main if we have write permission)
 
+## When I am trying to do git pull but there are divergent branches, then  
 
-
-
-
-
-# How to create a new branch and push changes to it ?
-git checkout -b sam-feature  
-git push origin sam-feature
-
-# When I am trying to do git pull but there are divergent branches, then  
    a) to merge/keep both the histories:  
    git pull --no-rebase
    
@@ -102,6 +100,14 @@ git push origin sam-feature
    e) but before resetting if there are any uncommited changes we should save them by using:  
    git stash
 
+
+
+
+
+
+# How to create a new branch and push changes to it ?
+git checkout -b sam-feature  
+git push origin sam-feature
 
 # Virtual environment is not pushed to github unless explicitly added
 

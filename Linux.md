@@ -92,6 +92,10 @@
 
     cat /etc/os-release
 
+## To know the RAM size and other info
+
+    free -h
+
 ## To see what network are we connected to
 
     iw dev wlan0 link

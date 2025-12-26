@@ -14,6 +14,20 @@
     rm -r folder_name
     output -> a folder with given name will be deleted from the current directory
 
+## How to list the files present in any folder
+
+    ls components/hailo
+
+## How to display the content present in any text file
+
+    cat /boot/firmware/config.txt
+
+## How to edit the content present in any text file
+
+    nano /boot/firmware/config.txt
+
+## If any command needs permission then run that command with sudo prefix
+
 ## To know about CPU 
     
     lscpu

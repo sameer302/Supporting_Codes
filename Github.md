@@ -87,20 +87,20 @@ In such a case I will get the local copy of remote repo in which I can make chan
 ## When I am trying to do git pull but there are divergent branches, then  
 
    a) to merge/keep both the histories:  
-   git pull --no-rebase
+   `git pull --no-rebase`
    
    b) to add local commits over remote:  
-   git pull --rebase
+   `git pull --rebase`
    
    c) to move the pointer forward if there are no unique local commits:  
-   git pull --ff-only
+   `git pull --ff-only`
    
    d) to discard local commits and reset to remote:  
-   git fetch origin  
-   git reset --hard origin/main
+   `git fetch origin`  
+   `git reset --hard origin/main`
    
    e) but before resetting if there are any uncommited changes we should save them by using:  
-   git stash
+   `git stash`
 
 
 
@@ -108,18 +108,18 @@ In such a case I will get the local copy of remote repo in which I can make chan
 
 
 # How to create a new branch and push changes to it ?
-git checkout -b sam-feature  
-git push origin sam-feature
+`git checkout -b sam-feature`  
+`git push origin sam-feature`
 
 # Virtual environment is not pushed to github unless explicitly added
 
 # To reset a particular commit but preserve the changes and then push this to github
-   git reset --soft <commit_id of last commit before the commit we want to reset>
-   git push --force
+   `git reset --soft <commit_id of last commit before the commit we want to reset>`
+   `git push --force`
 
 # To set tracking information for current branch of local repo
-   git branch --set-upstream-to=origin/<branch> main
+   `git branch --set-upstream-to=origin/<branch> main`
 
 # Check total repo size (including .git)
-   du -sh .
+   `du -sh`
 

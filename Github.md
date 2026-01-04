@@ -1,6 +1,6 @@
 # Important notes
 
-## virtual enviroenment is not pushed to github unless explicitly stated
+## virtual environment is not pushed to github unless explicitly stated
 
 ## always do git pull if you are using a repo on different devices.
 

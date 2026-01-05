@@ -142,6 +142,10 @@
 
     wget <download_link>
 
+## To install any .sh file
+
+    bash filename.sh
+
 ---
 
 # Commands to use for externally conected devices

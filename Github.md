@@ -1,10 +1,10 @@
-# Important notes
+# $ Important notes
 
 ## virtual environment is not pushed to github unless explicitly stated
 
 ## always do git pull if you are using a repo on different devices.
 
-# Made a local repo and now you want to push it on github
+# $ Made a local repo and now you want to push it on github
 
 ## how to initialize a git repo
    
@@ -68,7 +68,7 @@
 
    `git reset --hard`
    
-# When you have a remote repo and you want to use it locally
+# $ When you have a remote repo and you want to use it locally
 
 ## What all I can do when someone shares a git repo link with me ? 
 

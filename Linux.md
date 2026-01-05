@@ -138,6 +138,12 @@
 
     pip install
 
+## To download any package or installer
+
+    wget <download_link>
+
+---
+
 # Commands to use for externally conected devices
 
 ## To know the peripherals connected via PCIe

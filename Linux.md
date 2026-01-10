@@ -163,5 +163,11 @@
 
     sudo raspi-config
 
+## To see all the storage devices connected to our system 
+(Linux treats all storage devices as blocks)
+(ubuntu mounts all aplications as virtual disks so they will be visible as 'loop')
+(then we have internal hard disk drive as 'sda' and solid state drive as 'nvme0n1' along with their partitions if any)
+(SD card is mounted as sdb along with its two partitions sdb1(boot) and sdb2 (rootfs) also for this RM value will be 1 indicating that it is removable)
 
+    lsblk
   

@@ -12,12 +12,12 @@
 
 ## how to add user name and user email in github
    
-   `git config --global user.name "Your Name"`
+   `git config --global user.name "Your Name"`  
    `git config --global user.email "Your Email"`
 
-## how to add user name and user email in github
+## how to check user name and user email in github
    
-   `git config user.name`
+   `git config user.name`  
    `git config user.email`
 
 ## check repository status (which files are untracked, modified or staged)
@@ -58,7 +58,7 @@
 
 ## set the local current branch name so that we can push this branch to the remote repo branch
 
-   `git branch -M main` --> (by default this branch is named as Master and we need to -M just to avoid some unnecessary errors)
+   `git branch -M main` --> (by default this branch is named as Master and we need to write -M just to avoid some unnecessary errors)
 
 ## push local commits to github
 

@@ -82,7 +82,7 @@ In such a case I will get the local copy of remote repo in which I can make chan
 
 ## How to clone a repo ?  
 
-`git clone https://github.com/friendusername/reponame.git` -> (after this a remote repo named origin pointing to this URL is automatically added so anytime we want to push or pull we can just do, git pull origin main and also git push origin main if we have write permission)
+`git clone https://github.com/friendusername/reponame.git` -> (after this a remote repo named origin pointing to this URL is automatically added so anytime we want to push or pull we can just do, git pull origin main and also git push origin main if we have write permission. I don't need to do git init in this local repo, that is already done in the root folder of the cloned repo. SO if I change the directory and come inside the root folder of the cloned repo, now I can do git status and verify.)
 
 ## When I am trying to do git pull but there are divergent branches, then  
 
@@ -110,8 +110,6 @@ In such a case I will get the local copy of remote repo in which I can make chan
 # How to create a new branch and push changes to it ?
 `git checkout -b sam-feature`  
 `git push origin sam-feature`
-
-# Virtual environment is not pushed to github unless explicitly added
 
 # To reset a particular commit but preserve the changes and then push this to github
    `git reset --soft <commit_id of last commit before the commit we want to reset>`

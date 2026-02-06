@@ -170,4 +170,30 @@
 (SD card is mounted as sdb along with its two partitions sdb1(boot) and sdb2 (rootfs) also for this RM value will be 1 indicating that it is removable)
 
     lsblk
-  
+
+# How to install any application (For example, Zotero)
+
+## Download the file, mostly it will be tar.xz file
+
+## Either extract it using archive using GUI or if using terminal then run the command, 
+
+    tar -xf Zotero-*.tar.xz
+
+## Move it to /opt (it is a system directory specially for third party applications)
+
+    sudo mv Zotero_linux-x86_64 /opt/zotero
+
+## To open /opt folder, go to files, press ctrl + l, then enter /opt
+
+## Now we can run zotero using the command from terminal,
+
+    /opt/zotero/zotero
+
+## Now to make zotero appear in our applications menu, 
+
+    cp /opt/zotero/zotero.desktop ~/.local/share/applications
+    nano ~/.local/share/applications/zotero.desktop
+    Exec = /opt/zotero/zotero
+    Icon = /opt/zotero/icons/icon128.png
+
+Then press windows key and type zotero, we will be able to open zotero application

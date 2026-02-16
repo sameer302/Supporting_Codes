@@ -17,14 +17,16 @@
 ## 5) Deactivating virtual environment
    deactivate
 
-# Upgrading pip before installing any package
+## 6) Upgrading pip before installing any package
    pip install --upgrade pip
 
-## 6) Installing any module in our environment
+## 7) Installing any module in our environment
    pip install module_name
 
-## 7) Looking at various packages, modules and libraries installed in our environment
+## 8) Looking at various packages, modules and libraries installed in our environment
    pip list
 
-## 8) To create a requirements.txt to save all the dependencies of our project
+## 9) To create a requirements.txt to save all the dependencies of our project
    pip freeze > requirements.txt
+
+## 10) Packages installed via apt are not available to use in a virtual environment unless we create that virtual environment with --system-site-packages flag set during the creation of virtual environment. e.g. of one such package is picamera2

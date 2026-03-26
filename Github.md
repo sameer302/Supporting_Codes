@@ -159,7 +159,7 @@ optimization_of_ai_models/   ← your main repo
 └── detection_simple.py
 
 
-2) Remove nested .git, track everything in main repo
+2) remove nested .git, track everything in main repo
 - first we just simply remove the git folder present in hailo-apps so no tracking is done, `rm -rf hailo-apps/.git` (r for recursive since its a directory and f for force to not get any confirmation msg)
 - then we add this repo to our git logs for tracking, `git add hailo-apps/` and maybe commit this as, `git commit -m "Absorbed hailo-apps into main repo"`
 - so in this we will have everything in one repo but we will loose hailo-apps original git history and also not able to pull upstream updates from hailo-apps easily.

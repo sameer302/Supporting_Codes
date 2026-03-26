@@ -145,12 +145,19 @@ Now here I have following options to do :-
 - this is best if the cloned repo has its own remote and we want to track it separately.
 
 optimization_of_ai_models/   ← your main repo
+
 ├── .git/
+
 ├── .gitmodules              ← new file, stores the link to hailo-apps remote repos
+
 ├── hailo-apps/              ← looks like a normal folder but is actually a pointer
+
 │   └── (files from hailo-apps repo at a specific commit)
+
 ├── system_metrics_logger.py
+
 └── detection_simple.py
+
 
 2) Remove nested .git, track everything in main repo
 - first we just simply remove the git folder present in hailo-apps so no tracking is done, `rm -rf hailo-apps/.git` (r for recursive since its a directory and f for force to not get any confirmation msg)

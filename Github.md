@@ -126,11 +126,17 @@ In such a case I will get the local copy of remote repo in which I can make chan
 In such case, I will be able to see two git tracks being maintained in the source control section. Name of each section will be the name of the root repo in which I have created the git repo or initialized the git repo, i.e. ran `git init`. For example it looks like below,
 
 optimization_of_ai_models/          ← your main git repo
+
 ├── hailo-apps/                     ← another git repo cloned inside (nested)
+
 │   └── .git/
+
 ├── system_metrics_logger.py
+
 ├── detection_simple.py
+
 └── .git/
+
 
 Now here I have following options to do :-
 

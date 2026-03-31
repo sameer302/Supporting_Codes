@@ -11,7 +11,7 @@
 
 ## How to delete an non-empty folder
     
-    rm -r folder_name
+    rm -r folder_name (to delete without any confirmation message use rm -rf )
     output -> a folder with given name will be deleted from the current directory
 
 ## How to list the files present in any folder

@@ -1,4 +1,4 @@
-# Common Linux terminal commands
+# $Common Linux terminal commands
 ## How to create a folder in linux terminal
     
     mkdir folder_name
@@ -110,18 +110,6 @@
 
     free -h
 
-## To see what network are we connected to
-
-    iw dev wlan0 link
-
-## To see the list of all available networks that we can connect to
-
-    nmcli device wifi list
-
-## To connect to a particular network 
-
-    nmcli dev wifi connect "sameer" password "YOUR_WIFI_PASSWORD"
-
 ## To know the python version
 
     python3 --version
@@ -197,3 +185,34 @@
     Icon = /opt/zotero/icons/icon128.png
 
 Then press windows key and type zotero, we will be able to open zotero application
+
+# $Network Connection Commands
+
+## To add a new Wi-Fi network manually
+
+    nmcli connection add type wifi ifname wlan0 con-name "HomeWiFi" ssid "HomeWiFi"
+
+## To set password for that network
+
+    nmcli connection modify "HomeWiFi" wifi-sec.key-mgmt wpa-psk
+    nmcli connection modify "HomeWiFi" wifi-sec.psk "YOUR_WIFI_PASSWORD"
+
+## To activate/connect to that saved network
+
+    nmcli connection up "HomeWiFi"
+
+## To see autoconnection priority of all saved networks
+
+    nmcli -f NAME,AUTOCONNECT-PRIORITY connection show
+
+## To change autoconnection priority of a network
+
+    nmcli connection modify "HomeWiFi" connection.autoconnect-priority 20
+
+## To connect using Ethernet
+
+    nmcli device connect eth0
+
+## To see Ethernet connection status
+
+    nmcli device status
